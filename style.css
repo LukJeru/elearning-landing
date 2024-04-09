@@ -44,6 +44,11 @@ p {
   font-size: 1.25rem;
 }
 
+a {
+  cursor: pointer;
+  z-index: 1;
+}
+
 /*Header*/
 
 header {
@@ -100,6 +105,10 @@ header nav {
   width: 6rem;
   border-radius: 2rem;
   font-weight: 500;
+}
+
+footer .button {
+  background-image: linear-gradient(hsl(237, 100%,64%), hsl(322,87%,55%));
 }
 
 /*main*/
@@ -170,8 +179,4 @@ footer {
   align-items: center;
   margin-top: 10rem;
   padding: 3% 10%;
-}
-
-footer .button {
-  background-image: linear-gradient(hsl(237, 100%,64%), hsl(322,87%,55%));
 }
