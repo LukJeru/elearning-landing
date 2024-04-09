@@ -155,3 +155,20 @@ main {
   position: relative;
   bottom: 3.5rem;
 }
+
+/*footer*/
+
+footer {
+  width: 80%;
+  background-color: var(--footer-blue);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10rem;
+  padding: 3% 10%;
+}
+
+footer .button {
+  background-image: linear-gradient(hsl(237, 100%,64%), hsl(322,87%,55%));
+}
