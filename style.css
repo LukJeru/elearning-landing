@@ -16,6 +16,8 @@ body {
 :root {
   --footer-blue: hsl(233,54%,16%);
   --white: hsl(0,0%,100%);
+  --link-red: hsl(341, 92%, 62%);
+  --paragraph-color: hsl(232, 10%, 56%);
 }
 
 /*Typography*/
@@ -86,13 +88,70 @@ header nav {
   width: 6rem;
   border-radius: 2rem;
   font-weight: 500;
+  cursor: pointer;
 }
 
 #maximize-button {
-  background-image: linear-gradient(hsl(322, 87%,55%), hsl(13,100,64%));
+  background-image: linear-gradient(hsl(322, 87%,55%), hsl(13,100%,64%));
   padding: 1rem 2rem;
   color: var(--white);
   width: 6rem;
   border-radius: 2rem;
   font-weight: 500;
+}
+
+/*main*/
+
+main {
+  width: 80%;
+  display: grid;
+  grid-template: 1fr 1fr/ 1fr 1fr 1fr;
+  row-gap: 5rem;
+  column-gap: 1.5rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 1.2rem;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr 1fr;
+  height: 20rem;
+}
+
+.card img {
+  position: relative;
+  bottom: 3rem;
+}
+
+.card p {
+  color: var(--paragraph-color);
+  position: relative;
+  bottom: 4rem;
+}
+
+.card h3 {
+  position: relative;
+  bottom: 3rem;
+}
+
+.card a {
+  text-decoration: none;
+  color: var(--link-red);
+  font-weight: 600;
+  position: relative;
+  bottom: 3rem;
+}
+
+#most-popular {
+  color: var(--white);
+  background-image: linear-gradient(hsl(322, 87%,55%), hsl(13,100%,64%));
+}
+
+#most-popular h2 {
+  grid-row: 2/span 2;
+  position: relative;
+  bottom: 3.5rem;
 }
