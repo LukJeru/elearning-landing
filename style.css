@@ -59,6 +59,7 @@ header {
   height: 60rem;
 }
 
+
 header nav {
   width: 100%;
   display: flex;
@@ -66,12 +67,15 @@ header nav {
   align-items: center;
 }
 
+.hero-section {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
 .maximize {
-  display: inline-flex;
   flex-direction: column;
-  width: 42%;
+  grid-column: 1/span 1;
   margin-top: 6rem;
-  height: 24rem;
 }
 
 .maximize p{
@@ -79,11 +83,8 @@ header nav {
 }
 
 .hero {
-  width: 100%;
-  position: relative;
-  left: 36rem;
-  bottom: 48rem;
-  display: inline;
+  grid-column: 2/span 1;
+  width: 50rem;
 }
 
 /*Buttons*/
@@ -98,6 +99,10 @@ header nav {
   cursor: pointer;
 }
 
+.button:hover {
+  background-image: linear-gradient(hsla(233,54%,16%,0.7), hsla(233,54%,16%,0.7));
+}
+
 #maximize-button {
   background-image: linear-gradient(hsl(322, 87%,55%), hsl(13,100%,64%));
   padding: 1rem 2rem;
@@ -107,8 +112,18 @@ header nav {
   font-weight: 500;
 }
 
+#maximize-button:hover {
+  background-image: linear-gradient(hsla(322, 87%,55%, 0.7), hsla(13,100%,64%, 0.7));
+  color: hsla(0, 0%, 100%, 0.8);
+}
+
 footer .button {
   background-image: linear-gradient(hsl(237, 100%,64%), hsl(322,87%,55%));
+}
+
+footer .button:hover {
+  background-image: linear-gradient(hsla(237, 100%,64%,0.5), hsla(322,87%,55%, 0.5));
+  color: hsla(0, 0%, 100%, 0.6);
 }
 
 /*main*/
